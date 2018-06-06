@@ -12,6 +12,7 @@ let cards = document.querySelectorAll('div');
 cards = [...cards];
 
 const start = new Date().getTime();
+let activeCard ='';
 
 const init = function() {
   cards.forEach( card => {
@@ -22,13 +23,17 @@ const init = function() {
 }();
 
 const clickCard = function() {
-  console.log("click");
+  activeCard = this;
+  this.classList.remove('hidden');
+  // if (activeCard[0].style.background == activeCard[1].style.background) {
+  //   this.style.background = '';
+  // }
 }
 
 
 setTimeout(function() {
   cards.forEach( card => {
-    card.style.background = "#2C3A47";
+    card.classList.add('hidden');
     card.addEventListener('click' , clickCard);
   })
 }, 1500)
