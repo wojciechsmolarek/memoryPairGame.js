@@ -1,5 +1,4 @@
 ﻿# memory pairs game 
 
 
-https://wojciechsmolarek.github.io/memoryPairGame.js/src/
-
+https://codepen.io/wojciechsmolarek/pen/LrRrXL
